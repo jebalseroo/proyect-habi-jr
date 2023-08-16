@@ -6,10 +6,10 @@ const Menu = () => {
     <Menus>
       <div>
         <nav className='navMenu'>
-          <a href='#'>Home</a>
-          <a href='#'>Ventas</a>
-          <a href='#'>Compras</a>
-          <a href='#'>inventario</a>
+          <a href='/'>Home</a>
+          <a href='/ventas'>Ventas</a>
+          <a href='/compras'>Compras</a>
+          <a href='/inventario'>inventario</a>
           <div className='dot'></div>
         </nav>
       </div>
