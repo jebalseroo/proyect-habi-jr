@@ -46,12 +46,12 @@ export default function Ventas() {
   const newVenta = [
     {
       data: {
-        cantidad: cantidad || 0,
+        Cantidad: cantidad || 0,
         Descripccion: Articulo || "",
-        ValorVenta: Valor || 0,
-        ValorCompra: 3000, //funcion que traiga el valor del articulo
+        Valor_Venta: Valor || 0,
+        Valor_Compra: 3000, //funcion que traiga el valor del articulo
         Ganacia: 7000, //funcion que calcule la ganacia
-        fecha: now,
+        Fecha: now,
       },
       name: "POST_VENTAS",
     },
@@ -60,8 +60,8 @@ export default function Ventas() {
     "Fecha",
     "Cantidad",
     "Descripccion",
-    "Valor",
-    "Valor Compra",
+    "Valor_Venta",
+    "Valor_Compra",
     "Ganacia",
   ];
 

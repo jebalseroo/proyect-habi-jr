@@ -1,9 +1,13 @@
-import { getAllVentas, postVentas } from "./useApiServices";
+import { getAllVentas, postVentas , getAllInventario} from "./useApiServices";
 const useServices = () => {
   const servicesToExecute: Record<string, any> = {
     GET_ALL_VENTAS: async () => {
       const allVentas = await getAllVentas();
       return allVentas;
+    },
+    GET_ALL_INVENTARIO: async () => {
+      const allInventario = await getAllInventario();
+      return allInventario;
     },
     POST_VENTAS: async (payload: any) => {
       const allVentas = await postVentas(payload);

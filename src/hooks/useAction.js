@@ -5,8 +5,8 @@ import { useDispatch } from "react-redux";
 const useActions = ({ actionsOnMount = [] } = {}) => {
   const dispatch = useDispatch();
   const actionsToExecutes = {
-    POST_INVENTARIO: () => {
-      dispatch(postInventario());
+    POST_INVENTARIO: (data) => {
+      dispatch(postInventario(...data));
     },
     POST_VENTAS: async (data) => {
       console.log(...data);

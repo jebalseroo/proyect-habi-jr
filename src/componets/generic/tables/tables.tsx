@@ -26,12 +26,9 @@ const Tables = ({ heders, content }: ITables) => {
             <tbody>
               {content?.map((item, index) => (
                 <tr key={index}>
-                  <td>{item.fecha}</td>
-                  <td>{item.cantidad}</td>
-                  <td>{item.Descripccion}</td>
-                  <td>{item.ValorVenta}</td>
-                  <td>{item.ValorCompra}</td>
-                  <td>{item.Ganacia}</td>
+                  {heders.map((items, indexs) => (
+                    <td key={indexs}>{item[items]}</td>
+                  ))}
                 </tr>
               ))}
             </tbody>
